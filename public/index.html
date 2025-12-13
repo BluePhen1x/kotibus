@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kotibus - Premium Hoodies</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-banner">Free shipping | Easy Exchange Available</div>
+    </div>
+    <div class="header-main">
+      <div class="header-left">
+        <h1 class="logo">KOTIBUS</h1>
+      </div>
+      <div class="header-right">
+        <button class="login-btn">Login</button>
+        <button id="cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </div>
+    </div>
+    <nav class="nav-main">
+      <a href="#" class="nav-link active" data-category="hoodies">HOODIES</a>
+      <a href="#" class="nav-link" data-category="jackets">JACKETS</a>
+      <a href="#" class="nav-link" data-category="sweatshirts">SWEATSHIRTS</a>
+      <a href="#" class="nav-link" data-category="shirts">SHIRTS</a>
+      <a href="#" class="nav-link" data-category="track-suits">TRACK SUITS</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+      <div class="badge">
+        <div class="badge-icon">✓</div>
+        <div class="badge-text">100K HAPPY CUSTOMERS</div>
+      </div>
+      <div class="badge">
+        <div class="badge-icon">★</div>
+        <div class="badge-text">5 STAR RATING</div>
+      </div>
+      <div class="badge">
+        <div class="badge-icon">📦</div>
+        <div class="badge-text">PAN INDIA DELIVERY</div>
+      </div>
+      <div class="badge">
+        <div class="badge-icon">🔄</div>
+        <div class="badge-text">EASY EXCHANGE</div>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section id="products" class="products-grid"></section>
+  </main>
+
+  <!-- Cart Sidebar -->
+  <aside id="cart" class="cart hidden">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart" class="close-btn">&times;</button>
+    </div>
+    <ul id="cart-items" class="cart-items-list"></ul>
+    <div class="cart-footer">
+      <div class="cart-total">Total: Rs <span id="cart-total">0.00</span></div>
+      <button id="checkout" class="checkout-btn">CHECKOUT</button>
+    </div>
+  </aside>
+
+  <!-- Product Detail Modal -->
+  <div id="productModal" class="modal hidden">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img id="modalImage" src="" alt="">
+        </div>
+        <div class="modal-details">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <div class="modal-pricing">
+            <span class="modal-price-sale" id="modalSalePrice"></span>
+            <span class="modal-price-original" id="modalOriginalPrice"></span>
+            <span class="modal-discount" id="modalDiscount"></span>
+          </div>
+          <div class="modal-sizes">
+            <label>Select Size:</label>
+            <div id="sizeOptions" class="size-options"></div>
+          </div>
+          <button id="modalAddToCart" class="modal-add-btn">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>CUSTOMER CARE</h3>
+        <p>Store Time: 11:00 - 8:00, Monday - Saturday</p>
+        <p>Call: <strong>9099443090</strong></p>
+        <p>E-Mail: <strong>Kotibus@Gmail.Com</strong></p>
+        <p>Address: India</p>
+      </div>
+      <div class="footer-section">
+        <h3>INFORMATION</h3>
+        <a href="#">About Us</a>
+        <a href="#">Shipping</a>
+        <a href="#">Exchange / Refund</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms & Condition</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 All rights reserved Kotibus</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
