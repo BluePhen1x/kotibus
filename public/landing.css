@@ -237,6 +237,40 @@ body {
   font-size: 0.8rem;
 }
 
+/* Browse Section */
+.browse-section {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.browse-section p {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.browse-btn {
+  padding: 12px 28px;
+  background: rgba(61, 157, 255, 0.9);
+  color: #fff;
+  border: 2px solid #3d9dff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.browse-btn:hover {
+  background: #3d9dff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(61, 157, 255, 0.4);
+}
+
 /* Features Section */
 .features {
   display: grid;

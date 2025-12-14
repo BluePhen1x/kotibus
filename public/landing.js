@@ -145,6 +145,11 @@ document.getElementById('guestBtn').addEventListener('click', () => {
   }, 1000);
 });
 
+// Handle Browse Products
+document.getElementById('browseBtn').addEventListener('click', () => {
+  window.location.href = '/index.html';
+});
+
 // Initialize - check if already logged in
 window.addEventListener('DOMContentLoaded', () => {
   const currentUser = JSON.parse(localStorage.getItem('kotibus_user'));

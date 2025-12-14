@@ -12,6 +12,11 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 // Serve data folder for products
 app.use('/data', express.static(path.join(__dirname, '..', 'data')));
 
+// Redirect root to landing page
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'landing.html'));
+});
+
 const ORDERS_FILE = path.join(__dirname, '..', 'data', 'orders.json');
 
 app.post('/checkout', (req, res) => {
