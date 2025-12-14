@@ -80,7 +80,7 @@ body {
   flex: 0 0 auto;
 }
 
-.login-btn, .cart-btn {
+.login-btn, .cart-btn, .logout-btn {
   padding: 10px 16px;
   border: 2px solid var(--accent);
   background: #fff;
@@ -92,9 +92,39 @@ body {
   transition: all 0.3s ease;
 }
 
-.login-btn:hover {
+.login-btn:hover, .logout-btn:hover {
   background-color: var(--accent);
   color: #fff;
+}
+
+.logout-btn {
+  background: #ff6b6b;
+  color: #fff;
+  border-color: #ff6b6b;
+  margin-left: 8px;
+}
+
+.logout-btn:hover {
+  background: #ff5252;
+  border-color: #ff5252;
+  color: #fff;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 12px;
+}
+
+.user-section.hidden {
+  display: none;
+}
+
+.user-name {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .cart-btn:hover {

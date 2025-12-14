@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kotibus - Premium Hoodies & Apparel</title>
+  <link rel="stylesheet" href="/landing.css">
+</head>
+<body>
+  <!-- Hero Section with Background Image -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <img src="https://images.unsplash.com/photo-1449854708649-c247a6c25c52?w=1600&q=80" alt="NYC Skyline" class="hero-bg">
+    
+    <div class="hero-content">
+      <h1 class="hero-title">KOTIBUS</h1>
+      <p class="hero-subtitle">Premium Quality Hoodies & Apparel</p>
+      
+      <div class="auth-container">
+        <!-- Login Form -->
+        <div id="loginForm" class="auth-form active">
+          <h2>Sign In</h2>
+          <form id="loginFormElement">
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" id="loginEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="auth-btn">Sign In</button>
+          </form>
+          <p class="auth-switch">Don't have an account? <a href="#" onclick="toggleForm(event)">Sign Up</a></p>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signupForm" class="auth-form">
+          <h2>Create Account</h2>
+          <form id="signupFormElement">
+            <div class="form-group">
+              <label for="signupName">Full Name</label>
+              <input type="text" id="signupName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="signupEmail">Email</label>
+              <input type="email" id="signupEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="signupPassword">Password</label>
+              <input type="password" id="signupPassword" placeholder="Create a password (min 6 characters)" required>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="auth-btn">Create Account</button>
+          </form>
+          <p class="auth-switch">Already have an account? <a href="#" onclick="toggleForm(event)">Sign In</a></p>
+        </div>
+
+        <!-- Guest Mode -->
+        <div class="guest-mode">
+          <p>Browse as Guest</p>
+          <button id="guestBtn" class="guest-btn">Continue as Guest</button>
+          <small>Note: Guest checkout will include Rs 150 shipping fee</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🚚</div>
+      <h3>Fast Shipping</h3>
+      <p>Pan India delivery with express options available</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⭐</div>
+      <h3>Premium Quality</h3>
+      <p>100% authentic premium hoodies and apparel</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔄</div>
+      <h3>Easy Returns</h3>
+      <p>30-day return policy with no questions asked</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>Secure Checkout</h3>
+      <p>Your data is safe and secure with us</p>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/landing.js" defer></script>
+</body>
+</html>

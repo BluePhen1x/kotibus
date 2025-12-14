@@ -17,7 +17,11 @@
         <h1 class="logo">KOTIBUS</h1>
       </div>
       <div class="header-right">
-        <button class="login-btn">Login</button>
+        <div id="userSection" class="user-section hidden">
+          <span id="userName" class="user-name"></span>
+          <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+        <button id="loginBtn" class="login-btn">Login</button>
         <button id="cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
       </div>
     </div>

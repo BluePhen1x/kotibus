@@ -1,9 +1,35 @@
 // Cart Page JavaScript
 
+let currentUser = JSON.parse(localStorage.getItem('kotibus_user'));
+
 document.addEventListener('DOMContentLoaded', () => {
   loadCartPage();
   setupEventListeners();
+  updateUserUI();
 });
+
+function updateUserUI() {
+  const userSection = document.getElementById('userSection');
+  const loginBtn = document.getElementById('loginBtn');
+  const logoutBtn = document.getElementById('logoutBtn');
+  const userName = document.getElementById('userName');
+  
+  if (currentUser && !currentUser.isGuest) {
+    // Show user section
+    userSection.classList.remove('hidden');
+    loginBtn.style.display = 'none';
+    userName.textContent = `Hi, ${currentUser.name.split(' ')[0]}`;
+  } else if (currentUser && currentUser.isGuest) {
+    // Show guest info
+    userSection.classList.remove('hidden');
+    loginBtn.style.display = 'none';
+    userName.textContent = 'Guest Mode';
+  } else {
+    // Show login button
+    userSection.classList.add('hidden');
+    loginBtn.style.display = 'block';
+  }
+}
 
 function loadCartPage() {
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -89,11 +115,14 @@ function calculateOrderSummary(cart) {
     subtotal += item.salePrice * item.quantity;
   });
 
-  const shipping = 0; // Free shipping
+  // Apply shipping fee for guest users
+  const isGuest = currentUser && currentUser.isGuest;
+  const shipping = isGuest ? 150 : 0;
   const tax = Math.round(subtotal * 0.05); // 5% tax
   const total = subtotal + shipping + tax;
 
   document.getElementById('subtotal').textContent = `Rs ${subtotal.toFixed(2)}`;
+  document.getElementById('shipping').textContent = isGuest ? `Rs ${shipping}` : 'FREE';
   document.getElementById('tax').textContent = `Rs ${tax.toFixed(2)}`;
   document.getElementById('total-price').textContent = `Rs ${total.toFixed(2)}`;
 }
@@ -111,6 +140,16 @@ function proceedToCheckout() {
   if (cart.length === 0) {
     showToast('Your cart is empty');
     return;
+  }
+
+  // Check if user is guest
+  const isGuest = currentUser && currentUser.isGuest;
+  if (isGuest) {
+    const response = confirm('You are checking out as a guest. Guest checkouts include Rs 150 shipping fee.\n\nWould you like to sign in first for free shipping?');
+    if (response) {
+      window.location.href = '/landing.html';
+      return;
+    }
   }
 
   // Prompt for customer details
@@ -156,4 +195,25 @@ function showToast(message) {
   setTimeout(() => {
     toast.classList.add('hidden');
   }, 3000);
+}
+
+// Logout Handler
+const logoutBtn = document.getElementById('logoutBtn');
+if (logoutBtn) {
+  logoutBtn.addEventListener('click', () => {
+    localStorage.removeItem('kotibus_user');
+    localStorage.removeItem('kotibus_guest_mode');
+    showToast('Logged out successfully');
+    setTimeout(() => {
+      window.location.href = '/landing.html';
+    }, 1000);
+  });
+}
+
+// Login Handler
+const loginBtn = document.getElementById('loginBtn');
+if (loginBtn) {
+  loginBtn.addEventListener('click', () => {
+    window.location.href = '/landing.html';
+  });
 }

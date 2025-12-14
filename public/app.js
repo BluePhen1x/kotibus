@@ -10,6 +10,10 @@ const checkoutBtn = document.getElementById('checkout');
 const closeCartBtn = document.getElementById('close-cart');
 const toast = document.getElementById('toast');
 const navLinks = document.querySelectorAll('.nav-link');
+const loginBtn = document.getElementById('loginBtn');
+const logoutBtn = document.getElementById('logoutBtn');
+const userSection = document.getElementById('userSection');
+const userName = document.getElementById('userName');
 
 // Modal elements
 const productModal = document.getElementById('productModal');
@@ -23,6 +27,7 @@ let currentCategory = 'hoodies';
 let selectedProduct = null;
 let selectedSize = null;
 let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+let currentUser = JSON.parse(localStorage.getItem('kotibus_user'));
 
 function showToast(msg) {
   toast.textContent = msg;
@@ -286,5 +291,41 @@ checkoutBtn.addEventListener('click', async () => {
   }
 });
 
+// User Authentication
+function updateUserUI() {
+  currentUser = JSON.parse(localStorage.getItem('kotibus_user'));
+  
+  if (currentUser && !currentUser.isGuest) {
+    // Show user section
+    userSection.classList.remove('hidden');
+    loginBtn.style.display = 'none';
+    userName.textContent = `Hi, ${currentUser.name.split(' ')[0]}`;
+  } else if (currentUser && currentUser.isGuest) {
+    // Show guest info
+    userSection.classList.remove('hidden');
+    loginBtn.style.display = 'none';
+    userName.textContent = 'Guest Mode';
+  } else {
+    // Show login button
+    userSection.classList.add('hidden');
+    loginBtn.style.display = 'block';
+  }
+}
+
+loginBtn.addEventListener('click', () => {
+  window.location.href = '/landing.html';
+});
+
+logoutBtn.addEventListener('click', () => {
+  localStorage.removeItem('kotibus_user');
+  localStorage.removeItem('kotibus_guest_mode');
+  updateUserUI();
+  showToast('Logged out successfully');
+  setTimeout(() => {
+    window.location.href = '/landing.html';
+  }, 1000);
+});
+
 // Initialize
+updateUserUI();
 loadProducts();
