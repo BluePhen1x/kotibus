@@ -8,7 +8,7 @@
     "originalPrice": 3000,
     "salePrice": 1299,
     "sizes": ["XL", "XXL"],
-    "image": "public/adidas hoodie brown.jpeg"
+    "image": "/adidas hoodie brown.jpeg"
   },
   {
     "id": "dio-jacket-grey",
