@@ -33,18 +33,7 @@
     "sizes": ["M", "L", "XL", "XXL"],
     "image": "/data/UNderarmour%20brown.jpeg"
   },
-  {
-    "id": "lac-hoodie-grey",
-    "name": "LAC HOODIES DARK GREY",
-    "description": "Versatile dark grey hoodie",
-    "detailedDescription": "Versatility meets style in our dark grey LAC Hoodie. This essential piece works with virtually any outfit and style preference. The neutral grey tone is both trendy and timeless. The comfortable fit and premium fabric make it perfect for any occasion, from relaxed weekends to casual work settings.",
-    "category": "hoodies",
-    "originalPrice": 2700,
-    "salePrice": 1199,
-    "sizes": ["M", "L", "XXL"],
-    "image": "https://picsum.photos/500/600?random=13"
-  }
-  ,
+
   {
     "id": "new-hoodie-blue",
     "name": "Red puma hoodie",
