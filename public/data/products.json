@@ -47,13 +47,25 @@
   ,
   {
     "id": "new-hoodie-blue",
-    "name": "New Blue Hoodie",
-    "description": "A comfortable blue hoodie",
-    "detailedDescription": "Longer description here...",
+    "name": "Red puma hoodie",
+    "description": "Sporty red hoodie with iconic Puma branding",
+    "detailedDescription": "Stand out in this vibrant red Puma hoodie. Made from soft, breathable cotton blend fabric, it features the classic Puma logo on the chest. Perfect for workouts or casual street style, this hoodie offers a relaxed fit and a kangaroo pocket for convenience.",
     "category": "hoodies",
     "originalPrice": 2500,
     "salePrice": 1000,
     "sizes": ["M", "L"],
-    "image": "/data/blue-hoodie.jpeg"
+    "image": "/data/Red%20puma%20hoodie.jpeg"
+  }
+  ,
+  {
+    "id": "new-hoodie",
+    "name": "North face peach hoodie",
+    "description": "Soft peach hoodie with classic North Face durability",
+    "detailedDescription": "Embrace comfort and style with this peach-colored North Face hoodie. Crafted for warmth and durability, it features the iconic Half Dome logo and a soft fleece interior. Whether you're hitting the trails or relaxing at home, this hoodie provides the perfect blend of outdoor performance and casual fashion.",
+    "category": "hoodies",
+    "originalPrice": 2500,
+    "salePrice": 1000,
+    "sizes": ["M", "L"],
+    "image": "/data/the%20north%20face%20peach%20hoodie.jpeg"
   }
 ]
