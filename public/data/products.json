@@ -1,124 +1,37 @@
 [
-  {
-    "id": "dio-jacket-grey",
-    "name": "Black Nike Hoodie",
-    "description": "Stylish and warm black jacket",
-    "detailedDescription": "Our stylish black nike hoodie combines elegance with warmth. This versatile piece works perfectly with any wardrobe, from casual jeans to smart trousers. The premium fabric provides excellent insulation while maintaining breathability. The classic grey color never goes out of style, making it a wardrobe essential. Features quality stitching and durable construction for years of wear.",
-    "category": "jackets",
-    "originalPrice": 3000,
-    "salePrice": 1299,
-    "sizes": ["M", "L", "XXL"],
-    "image": "https://loremflickr.com/500/600/jacket,grey"
-  },
-  {
-    "id": "dio-jacket-green",
-    "name": "DIO R JACKET GREEN",
-    "description": "Trendy green jacket for casual wear",
-    "detailedDescription": "Make a bold statement with our trendy green DIO R Jacket. This eye-catching piece is perfect for those who love to stand out. Crafted with premium materials, it offers exceptional comfort and style. The vibrant green hue adds personality to any outfit, whether you're heading to work or exploring the outdoors. Available in M, L, and XXL.",
-    "category": "jackets",
-    "originalPrice": 3000,
-    "salePrice": 1299,
-    "sizes": ["M", "L", "XXL"],
-    "image": "https://loremflickr.com/500/600/jacket,green"
-  },
-  {
-    "id": "dio-jacket-black",
-    "name": "DIO R JACKET BLACK",
-    "description": "Classic black jacket, perfect all-rounder",
-    "detailedDescription": "The ultimate classic – our black DIO R Jacket is an all-rounder that pairs with everything. Timeless, elegant, and incredibly versatile, this jacket is a must-have in every wardrobe. The premium construction ensures durability and comfort. Perfect for any season and any occasion. Invest in quality with this iconic piece.",
-    "category": "jackets",
-    "originalPrice": 3000,
-    "salePrice": 1299,
-    "sizes": ["L", "XXL"],
-    "image": "https://loremflickr.com/500/600/jacket,black"
-  },
-  {
-    "id": "rl-zipper-beige",
-    "name": "RL ZIPPER SWEATER DARK BEIGE",
-    "description": "Soft zipper sweater in warm beige tone",
-    "detailedDescription": "Cozy and chic – our RL Zipper Sweater in dark beige combines comfort with style. The soft fabric feels luxurious against the skin, while the zipper design allows for easy on-and-off wear. Perfect for layering or wearing alone, this sweater adapts to any temperature. The neutral beige tone pairs beautifully with any color palette.",
-    "category": "sweatshirts",
-    "originalPrice": 2100,
-    "salePrice": 899,
-    "sizes": ["L", "XL"],
-    "image": "https://cdn.shopify.com/s/files/1/0601/6997/products/beige-sweater-1.jpg?v=1"
-  },
-  {
-    "id": "rl-zipper-grey",
-    "name": "RL ZIPPER SWEATER DARK GREY",
-    "description": "Comfortable dark grey zipper sweater",
-    "detailedDescription": "Stay warm and comfortable in our dark grey RL Zipper Sweater. The premium knit fabric provides excellent warmth without bulk. The front zipper design adds functionality and modern flair. Whether you're relaxing at home or out and about, this sweater keeps you cozy and stylish. A versatile essential that works with any outfit.",
-    "category": "sweatshirts",
-    "originalPrice": 2100,
-    "salePrice": 899,
-    "sizes": ["XL"],
-    "image": "https://cdn.shopify.com/s/files/1/0601/6997/products/grey-sweater-1.jpg?v=1"
-  },
-  {
-    "id": "balan-sweatshirt-biscuit",
-    "name": "BALAN SWEATSHIRTS BISCUIT",
-    "description": "Cozy biscuit-colored sweatshirt",
-    "detailedDescription": "Wrap yourself in comfort with our warm biscuit-colored BALAN Sweatshirt. This soft and breathable piece is perfect for casual everyday wear. The neutral biscuit tone flatters all skin tones and pairs effortlessly with any outfit. Crafted from quality fabric, it offers durability and comfort for long-lasting wear.",
-    "category": "sweatshirts",
-    "originalPrice": 2700,
-    "salePrice": 999,
-    "sizes": ["M", "L", "XL"],
-    "image": "https://cdn.shopify.com/s/files/1/0601/6997/products/biscuit-sweatshirt-1.jpg?v=1"
-  },
-  {
-    "id": "balan-sweatshirt-black",
-    "name": "BALAN SWEATSHIRTS BLACK",
-    "description": "Essential black sweatshirt for everyday wear",
-    "detailedDescription": "The wardrobe essential you didn't know you needed – our black BALAN Sweatshirt. Perfect for any occasion, from casual lounging to smart-casual outings. The soft fabric provides all-day comfort, while the sleek black color never goes out of style. A must-have piece that works with everything in your closet.",
-    "category": "sweatshirts",
-    "originalPrice": 2700,
-    "salePrice": 999,
-    "sizes": ["M", "L", "XXL"],
-    "image": "https://cdn.shopify.com/s/files/1/0601/6997/products/black-sweatshirt-1.jpg?v=1"
-  },
-  {
-    "id": "balan-sweatshirt-red",
-    "name": "BALAN SWEATSHIRTS RED",
-    "description": "Vibrant red sweatshirt for a bold look",
-    "detailedDescription": "Make a bold fashion statement with our vibrant red BALAN Sweatshirt. This eye-catching piece brings energy and personality to your wardrobe. The quality fabric ensures comfort and durability, while the striking red color adds instant style to any outfit. Perfect for those who love to express themselves through fashion.",
-    "category": "sweatshirts",
-    "originalPrice": 2700,
-    "salePrice": 999,
-    "sizes": ["M", "L", "XL", "XXL"],
-    "image": "https://cdn.shopify.com/s/files/1/0601/6997/products/red-sweatshirt-1.jpg?v=1"
-  },
+
   {
     "id": "lac-hoodie-copper",
-    "name": "LAC HOODIES COPPER",
+    "name": "Addidas brown hoodie",
     "description": "Premium copper-toned hoodie with embroidered design",
-    "detailedDescription": "Elevate your hoodie game with our premium LAC Hoodie in striking copper tone. This luxurious piece combines style and comfort seamlessly. Perfect for cooler weather, it features a spacious kangaroo pocket and a drawstring hood for maximum comfort. The copper color adds a sophisticated twist to your casual wardrobe. Featuring a bold embroidered swoosh design that adds street-style edge to this essential piece.",
+    "detailedDescription": "Elevate your hoodie game with our premium Adidas Hoodie in striking copper tone. This luxurious piece combines style and comfort seamlessly. Perfect for cooler weather, it features a spacious kangaroo pocket and a drawstring hood for maximum comfort. The copper color adds a sophisticated twist to your casual wardrobe. Featuring a bold embroidered swoosh design that adds street-style edge to this essential piece.",
     "category": "hoodies",
     "originalPrice": 2700,
     "salePrice": 1199,
     "sizes": ["M", "L", "XL", "XXL"],
-    "image": "https://picsum.photos/500/600?random=10"
+    "image": "/data/adidas%20hoodie%20brown.jpeg"
   },
   {
     "id": "lac-hoodie-black",
-    "name": "LAC HOODIES BLACK",
+    "name": "black Nike Hoodie",
     "description": "Sleek black hoodie, timeless classic",
-    "detailedDescription": "The epitome of cool – our black LAC Hoodie is a timeless classic that never disappoints. Perfect for any season and any style, this hoodie is your go-to piece for comfort and sophistication. The soft interior lining keeps you warm, while the sleek exterior maintains a polished look. Available in all sizes.",
+    "detailedDescription": "The epitome of cool – our black Nike Hoodie is a timeless classic that never disappoints. Perfect for any season and any style, this hoodie is your go-to piece for comfort and sophistication. The soft interior lining keeps you warm, while the sleek exterior maintains a polished look. Available in all sizes.",
     "category": "hoodies",
     "originalPrice": 2700,
     "salePrice": 1199,
     "sizes": ["M", "L", "XL", "XXL"],
-    "image": "https://picsum.photos/500/600?random=11"
+    "image": "/data/black%20nike%20hoodie.jpeg"
   },
   {
     "id": "lac-hoodie-brown",
-    "name": "LAC HOODIES BROWN",
+    "name": "Underarmour brown hoodie",
     "description": "Rich brown hoodie for a sophisticated look",
-    "detailedDescription": "Achieve a sophisticated and refined look with our rich brown LAC Hoodie. The warm brown tone exudes elegance while maintaining casual comfort. Perfect for layering or wearing alone, this hoodie transitions seamlessly from day to night. Crafted with premium materials for exceptional durability and comfort.",
+    "detailedDescription": "Achieve a sophisticated and refined look with our rich brown Underarmour Hoodie. The warm brown tone exudes elegance while maintaining casual comfort. Perfect for layering or wearing alone, this hoodie transitions seamlessly from day to night. Crafted with premium materials for exceptional durability and comfort.",
     "category": "hoodies",
     "originalPrice": 2700,
     "salePrice": 1199,
     "sizes": ["M", "L", "XL", "XXL"],
-    "image": "https://picsum.photos/500/600?random=12"
+    "image": "/data/UNderarmour%20brown.jpeg"
   },
   {
     "id": "lac-hoodie-grey",
