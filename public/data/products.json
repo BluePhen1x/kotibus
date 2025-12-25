@@ -1,14 +1,14 @@
 [
   {
     "id": "dio-jacket-red",
-    "name": "DIO R JACKET RED",
+    "name": "Adidas hoodie brown",
     "description": "Premium quality jacket with superior comfort",
     "detailedDescription": "Experience ultimate comfort and style with our premium DIO R Jacket in vibrant red. Crafted from high-quality materials, this jacket features superior insulation and a sleek modern design. Perfect for casual outings or outdoor adventures. The durable fabric ensures long-lasting wear, while the contemporary cut flatters all body types. Available in XL and XXL sizes.",
     "category": "jackets",
     "originalPrice": 3000,
     "salePrice": 1299,
     "sizes": ["XL", "XXL"],
-    "image": "https://loremflickr.com/500/600/jacket,red"
+    "image": "public/adidas hoodie brown.jpeg"
   },
   {
     "id": "dio-jacket-grey",
