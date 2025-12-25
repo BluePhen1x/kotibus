@@ -1,20 +1,9 @@
 [
   {
-    "id": "dio-jacket-red",
-    "name": "Adidas hoodie brown",
-    "description": "Premium quality jacket with superior comfort",
-    "detailedDescription": "Experience ultimate comfort and style with our premium DIO R Jacket in vibrant red. Crafted from high-quality materials, this jacket features superior insulation and a sleek modern design. Perfect for casual outings or outdoor adventures. The durable fabric ensures long-lasting wear, while the contemporary cut flatters all body types. Available in XL and XXL sizes.",
-    "category": "jackets",
-    "originalPrice": 3000,
-    "salePrice": 1299,
-    "sizes": ["XL", "XXL"],
-    "image": "/data/adidas%20hoodie%20brown.jpeg"
-  },
-  {
     "id": "dio-jacket-grey",
-    "name": "DIO R JACKET GREY",
-    "description": "Stylish and warm grey jacket",
-    "detailedDescription": "Our stylish grey DIO R Jacket combines elegance with warmth. This versatile piece works perfectly with any wardrobe, from casual jeans to smart trousers. The premium fabric provides excellent insulation while maintaining breathability. The classic grey color never goes out of style, making it a wardrobe essential. Features quality stitching and durable construction for years of wear.",
+    "name": "Black Nike Hoodie",
+    "description": "Stylish and warm black jacket",
+    "detailedDescription": "Our stylish black nike hoodie combines elegance with warmth. This versatile piece works perfectly with any wardrobe, from casual jeans to smart trousers. The premium fabric provides excellent insulation while maintaining breathability. The classic grey color never goes out of style, making it a wardrobe essential. Features quality stitching and durable construction for years of wear.",
     "category": "jackets",
     "originalPrice": 3000,
     "salePrice": 1299,
