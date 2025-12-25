@@ -44,4 +44,16 @@
     "sizes": ["M", "L", "XXL"],
     "image": "https://picsum.photos/500/600?random=13"
   }
+  ,
+  {
+    "id": "new-hoodie-blue",
+    "name": "New Blue Hoodie",
+    "description": "A comfortable blue hoodie",
+    "detailedDescription": "Longer description here...",
+    "category": "hoodies",
+    "originalPrice": 2500,
+    "salePrice": 1000,
+    "sizes": ["M", "L"],
+    "image": "/data/blue-hoodie.jpeg"
+  }
 ]
